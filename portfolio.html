@@ -1,168 +1,251 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Портфолио</title>
+    <title>Студия</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- header -->
-    <header>
-      <a href="./index.html">Web<span>Studio</span></a>
+    <header class="header">
+      <a class="logo" href="./index.html"
+        >Web<span class="logo-accent-header">Studio</span></a
+      >
       <!-- !!!Лого вне nav потому что в hw-08 nav будет скрыт display non!!! -->
-      <nav>
-        <ul>
-          <li><a href="./index.html">Студия</a></li>
-          <li><a href="./portfolio.html">Портфолио</a></li>
-          <li><a href="">Контакты</a></li>
+      <nav class="nav">
+        <ul class="list-nav-header">
+          <li class="list-nav-header-item">
+            <a
+              class="link list-nav-header-item-link current"
+              href="./index.html"
+              >Студия</a
+            >
+          </li>
+          <li class="list-nav-header-item">
+            <a class="link list-nav-header-item-link" href="./portfolio.html"
+              >Портфолио</a
+            >
+          </li>
+          <li class="list-nav-header-item">
+            <a class="link list-nav-header-item-link" href="">Контакты</a>
+          </li>
         </ul>
       </nav>
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+      <ul class="list-contacts-header">
+        <li class="list-contacts-header-item">
+          <a
+            class="link list-contacts-header-item-link"
+            href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li class="list-contacts-header-item">
+          <a
+            class="link list-contacts-header-item-link"
+            href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
+        </li>
       </ul>
     </header>
     <!-- maim information -->
-    <main>
-      <section>
-        <h2>Меню видов работ</h2>
-        <ul>
-          <li><button type="button">Все</button></li>
-          <li><button type="button">Веб-сайты</button></li>
-          <li><button type="button">Приложения</button></li>
-          <li><button type="button">Дизайн</button></li>
-          <li><button type="button">Маркетинг</button></li>
+    <main class="main">
+      <!-- examples -->
+      <section class="section-examples">
+        <h2 class="title-section title-section-examples">Меню видов работ</h2>
+        <ul class="list-section-examples-button">
+          <li class="list-section-examples-button-item">
+            <button type="button">Все</button>
+          </li>
+          <li class="list-section-examples-button-item">
+            <button type="button">Веб-сайты</button>
+          </li>
+          <li class="list-section-examples-button-item">
+            <button type="button">Приложения</button>
+          </li>
+          <li class="list-section-examples-button-item">
+            <button type="button">Дизайн</button>
+          </li>
+          <li class="list-section-examples-button-item">
+            <button type="button">Маркетинг</button>
+          </li>
         </ul>
-        <ul>
-          <li>
-            <a href=""
+        <ul class="list-section-examples-example">
+          <li class="list-section-examples-example-item">
+            <a class="list-section-examples-example-item-link" href=""
               ><img
                 src="./images/portfolio.html/examples/tekhnokryak.jpg"
                 alt=""
                 width="370"
                 height="294"
               />
-              <h3>Технокряк</h3>
-              <p>Веб-сайт</p></a
+              <h3 class="list-section-examples-example-item-title">
+                Технокряк
+              </h3>
+              <p class="list-section-examples-example-item-description">
+                Веб-сайт
+              </p></a
             >
           </li>
-          <li>
-            <a href=""
+          <li class="list-section-examples-example-item">
+            <a class="list-section-examples-example-item-link" href=""
               ><img
                 src="./images/portfolio.html/examples/poster-new-orlean-vs-golden-star.jpg"
                 alt=""
                 width="370"
                 height="294"
               />
-              <h3>Постер New Orlean vs Golden Star</h3>
-              <p>Дизайн</p></a
+              <h3 class="list-section-examples-example-item-title">
+                Постер New Orlean vs Golden Star
+              </h3>
+              <p class="list-section-examples-example-item-description">
+                Дизайн
+              </p></a
             >
           </li>
-          <li>
-            <a href=""
+          <li class="list-section-examples-example-item">
+            <a class="list-section-examples-example-item-link" href=""
               ><img
                 src="./images/portfolio.html/examples/restoran-seafood.jpg"
                 alt=""
                 width="370"
                 height="294"
               />
-              <h3>Ресторан Seafood</h3>
-              <p>Приложение</p></a
+              <h3 class="list-section-examples-example-item-title">
+                Ресторан Seafood
+              </h3>
+              <p class="list-section-examples-example-item-description">
+                Приложение
+              </p></a
             >
           </li>
-          <li>
-            <a href=""
+          <li class="list-section-examples-example-item">
+            <a class="list-section-examples-example-item-link" href=""
               ><img
                 src="./images/portfolio.html/examples/proekt-prime.jpg"
                 alt=""
                 width="370"
                 height="294"
               />
-              <h3>Проект Prime</h3>
-              <p>Маркетинг</p></a
+              <h3 class="list-section-examples-example-item-title">
+                Проект Prime
+              </h3>
+              <p class="list-section-examples-example-item-description">
+                Маркетинг
+              </p></a
             >
           </li>
-          <li>
-            <a href=""
+          <li class="list-section-examples-example-item">
+            <a class="list-section-examples-example-item-link" href=""
               ><img
                 src="./images/portfolio.html/examples/proekt-boxes.jpg"
                 alt=""
                 width="370"
                 height="294"
               />
-              <h3>Проект Boxes</h3>
-              <p>Приложение</p></a
+              <h3 class="list-section-examples-example-item-title">
+                Проект Boxes
+              </h3>
+              <p class="list-section-examples-example-item-description">
+                Приложение
+              </p></a
             >
           </li>
-          <li>
-            <a href=""
+          <li class="list-section-examples-example-item">
+            <a class="list-section-examples-example-item-link" href=""
               ><img
                 src="./images/portfolio.html/examples/inspiration-has-no-borders.jpg"
                 alt=""
                 width="370"
                 height="294"
               />
-              <h3>Inspiration has no Borders</h3>
-              <p>Веб-сайт</p></a
+              <h3 class="list-section-examples-example-item-title">
+                Inspiration has no Borders
+              </h3>
+              <p class="list-section-examples-example-item-description">
+                Веб-сайт
+              </p></a
             >
           </li>
-          <li>
-            <a href=""
+          <li class="list-section-examples-example-item">
+            <a class="list-section-examples-example-item-link" href=""
               ><img
                 src="./images/portfolio.html/examples/izdaniye-limited-edition.jpg"
                 alt=""
                 width="370"
                 height="294"
               />
-              <h3>Издание Limited Edition</h3>
-              <p>Дизайн</p></a
+              <h3 class="list-section-examples-example-item-title">
+                Издание Limited Edition
+              </h3>
+              <p class="list-section-examples-example-item-description">
+                Дизайн
+              </p></a
             >
           </li>
-          <li>
-            <a href=""
+          <li class="list-section-examples-example-item">
+            <a class="list-section-examples-example-item-link" href=""
               ><img
                 src="./images/portfolio.html/examples/proekt-lab.jpg"
                 alt=""
                 width="370"
                 height="294"
               />
-              <h3>Проект LAB</h3>
-              <p>Маркетинг</p></a
+              <h3 class="list-section-examples-example-item-title">
+                Проект LAB
+              </h3>
+              <p class="list-section-examples-example-item-description">
+                Маркетинг
+              </p></a
             >
           </li>
-          <li>
-            <a href=""
+          <li class="list-section-examples-example-item">
+            <a class="list-section-examples-example-item-link" href=""
               ><img
                 src="./images/portfolio.html/examples/growing-business.jpg"
                 alt=""
                 width="370"
                 height="294"
               />
-              <h3>Growing Business</h3>
-              <p>Приложение</p></a
+              <h3 class="list-section-examples-example-item-title">
+                Growing Business
+              </h3>
+              <p class="list-section-examples-example-item-description">
+                Приложение
+              </p></a
             >
           </li>
         </ul>
       </section>
     </main>
     <!-- footer -->
-    <footer>
-      <a href="./index.html">Web<span>Studio</span></a>
-      <address>
-        <ul>
-          <li>
+    <footer class="footer">
+      <a class="logo" href="./index.html"
+        >Web<span class="logo-accent-footer">Studio</span></a
+      >
+      <address class="address">
+        <ul class="list-address">
+          <li class="list-address-item">
             <a
+              class="link link-contacts-footer-address"
               href="https://goo.gl/maps/VducrsW37EZ99G4x5"
               target="_blank"
               rel="noopener noreferrer"
               >г. Киев, пр-т Леси Украинки, 26</a
             >
-            <!-- Prettier неудобно разрывает теги (например </a> на двух предыдущих строчках). Так и должно быть или лучше изменить настройки самого Prettier? -->
           </li>
-          <li><a href="mailto:info@example.com">info@example.com</a></li>
-          <li><a href="tel:+380991111111">+38 099 111 11 11</a></li>
+          <li class="list-address-item">
+            <a class="link link-contacts-footer" href="mailto:info@example.com"
+              >info@example.com</a
+            >
+          </li>
+          <li class="list-address-item">
+            <a class="link link-contacts-footer" href="tel:+380991111111"
+              >+38 099 111 11 11</a
+            >
+          </li>
         </ul>
       </address>
     </footer>
