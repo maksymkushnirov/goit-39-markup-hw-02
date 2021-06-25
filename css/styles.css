@@ -1,4 +1,4 @@
-/* Вопросы легко найти введя в поиск: ????? */
+/* Вопросы легко найти введя в поиск: ????? (Всё что отмечено по другому - старые вопросы или личные комментарии) */
 :root {
   --font-family-primary: "Roboto", sans-serif;
   --font-family-secondary: "Raleway", sans-serif;
@@ -10,16 +10,18 @@
   --color-accent-secondary: #000000;
   --color-background-primary: #2f303a;
 }
-
 /* body */
 body {
   font-family: var(--font-family-primary), sans-serif;
   color: var(--color-main);
 }
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
 /* ????? Нужно ли применять к body ещё какие-то стили? */
-/* ????? Нужно ли использовать сброс:
-a{text-decoration:none;} ul{list-style:none;}?
-Или во втором ДЗ ссылки и списки могут оставаться со стандартными декоративными элементами?*/
 
 /* header */
 .logo {
@@ -99,6 +101,12 @@ a{text-decoration:none;} ul{list-style:none;}?
   text-transform: uppercase;
   color: var(--color-dark-primary);
 }
+.list-section-advantages-item-description {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--color-main);
+}
 /* activities */
 .title-section {
   font-size: 36px;
@@ -117,6 +125,7 @@ a{text-decoration:none;} ul{list-style:none;}?
 .list-section-team-item-description {
   line-height: 1.19;
   /* ????? Нужно ли здесь указывать font-weight? И как понять какой он чейчас, если в стилях он не прописан и не унаследывается, а через девтулзы это свойство не отображается?*/
+  font-size: 14px;
   letter-spacing: 0.03em;
 }
 /* portfolio.html */
@@ -157,6 +166,8 @@ a{text-decoration:none;} ul{list-style:none;}?
 }
 .address {
   font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
@@ -172,3 +183,7 @@ a{text-decoration:none;} ul{list-style:none;}?
 .link-contacts-footer:focus {
   color: var(--color-accent-primary);
 }
+/* Q&A history
+Нужно ли использовать сброс:
+a{text-decoration:none;} ul{list-style:none;}?
+Или во втором ДЗ ссылки и списки могут оставаться со стандартными декоративными элементами? */
