@@ -1,3 +1,52 @@
+:root {
+  --font-family-primary: "Roboto", sans-serif;
+  --font-family-secondary: "Raleway", sans-serif;
+  --color-main: #757575;
+  --color-dark-primary: #212121;
+  --color-accent-primary: #2196f3;
+  --color-accent-secondary: #000000;
+}
+
+/* body */
+body {
+  font-family: var(--font-family-primary);
+  color: var(--color-main);
+}
+/* ????? Нужно ли применять к body ещё какие-то стили ????? */
+/* ????? Нужно ли использовать сброс:
+a{text-decoration:none;} ul{list-style:none;}
+?????*/
+/* header */
+.logo {
+  font-family: var(--font-family-secondary);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--color-accent-primary);
+}
+.logo-accent-header {
+  color: var(--color-accent-secondary);
+}
+.list-nav-header-item-link {
+  color: var(--color-dark-primary);
+}
+.list-nav-header-item-link.current {
+  color: var(--color-accent-primary);
+}
+.list-nav-header-item-link:hover,
+.list-nav-header-item-link:focus {
+  color: var(--color-accent-primary);
+}
+.list-contacts-header-item-link {
+  color: var(--color-main);
+}
+.list-contacts-header-item-link:hover,
+.list-contacts-header-item-link:focus {
+  color: var(--color-accent-primary);
+}
+/* main */
+/* advantages */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -11,3 +60,7 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+/* activities */
+/* team */
+/* examples */
+/* footer */
