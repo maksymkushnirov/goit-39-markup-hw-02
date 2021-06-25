@@ -2,9 +2,12 @@
   --font-family-primary: "Roboto", sans-serif;
   --font-family-secondary: "Raleway", sans-serif;
   --color-main: #757575;
+  --color-white-primary: #ffffff;
+  --color-white-secondary: rgba(255, 255, 255, 0.6);
   --color-dark-primary: #212121;
   --color-accent-primary: #2196f3;
   --color-accent-secondary: #000000;
+  --color-background-primary: #2f303a;
 }
 
 /* body */
@@ -64,3 +67,20 @@ a{text-decoration:none;} ul{list-style:none;}
 /* team */
 /* examples */
 /* footer */
+.footer {
+  background-color: var(--color-background-primary);
+}
+.logo-accent-footer {
+  color: var(--color-white-primary);
+}
+.address {
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.link-contacts-footer-address {
+  color: var(--color-white-primary);
+}
+.link-contacts-footer {
+  color: var(--color-white-secondary);
+}
