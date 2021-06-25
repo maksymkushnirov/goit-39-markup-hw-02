@@ -59,6 +59,7 @@ a{text-decoration:none;} ul{list-style:none;}
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  /*   text-align: center; */
   color: var(--color-white-primary);
 }
 .button-section-hero {
@@ -85,9 +86,60 @@ a{text-decoration:none;} ul{list-style:none;}
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.list-section-advantages-item-title {
+  font-size: 14px;
+  /* !!! Возможно нужно будет вписать font-weight после сброса !!!*/
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--color-dark-primary);
+}
 /* activities */
+.title-section {
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--color-dark-primary);
+}
 /* team */
+.list-section-team-item-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--color-dark-primary);
+}
+.list-section-team-item-description {
+  line-height: 1.19;
+}
+/* portfolio.html */
 /* examples */
+.button-section-examples {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--color-dark-primary);
+  cursor: pointer;
+}
+.button-section-examples:hover,
+.button-section-examples:focus,
+.button-section-examples.current {
+  background-color: var(--color-accent-primary);
+  color: var(--color-white-primary);
+}
+.list-section-examples-example-item-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--color-dark-primary);
+}
+.list-section-examples-example-item-description {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--color-main);
+}
 /* footer */
 .footer {
   background-color: var(--color-background-primary);
