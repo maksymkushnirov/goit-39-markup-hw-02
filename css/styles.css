@@ -49,6 +49,28 @@ a{text-decoration:none;} ul{list-style:none;}
   color: var(--color-accent-primary);
 }
 /* main */
+/* hero */
+.section-hero {
+  background-color: var(--color-background-primary);
+}
+.title-section-hero {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-white-primary);
+}
+.button-section-hero {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  background-color: var(--color-accent-primary);
+  color: var(--color-white-primary);
+  cursor: pointer;
+}
 /* advantages */
 .visually-hidden {
   position: absolute;
