@@ -1,3 +1,4 @@
+/* Вопросы легко найти введя в поиск: ????? */
 :root {
   --font-family-primary: "Roboto", sans-serif;
   --font-family-secondary: "Raleway", sans-serif;
@@ -12,17 +13,17 @@
 
 /* body */
 body {
-  font-family: var(--font-family-primary);
+  font-family: var(--font-family-primary), sans-serif;
   color: var(--color-main);
 }
-/* ????? Нужно ли применять к body ещё какие-то стили ????? */
+/* ????? Нужно ли применять к body ещё какие-то стили? */
 /* ????? Нужно ли использовать сброс:
-a{text-decoration:none;} ul{list-style:none;}
-?????*/
+a{text-decoration:none;} ul{list-style:none;}?
+Или во втором ДЗ ссылки и списки могут оставаться со стандартными декоративными элементами?*/
+
 /* header */
 .logo {
   font-family: var(--font-family-secondary);
-  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -32,16 +33,22 @@ a{text-decoration:none;} ul{list-style:none;}
   color: var(--color-accent-secondary);
 }
 .list-nav-header-item-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   color: var(--color-dark-primary);
 }
+.list-nav-header-item-link:hover,
+.list-nav-header-item-link:focus,
 .list-nav-header-item-link.current {
   color: var(--color-accent-primary);
 }
-.list-nav-header-item-link:hover,
-.list-nav-header-item-link:focus {
-  color: var(--color-accent-primary);
-}
 .list-contacts-header-item-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   color: var(--color-main);
 }
 .list-contacts-header-item-link:hover,
@@ -64,7 +71,6 @@ a{text-decoration:none;} ul{list-style:none;}
 }
 .button-section-hero {
   font-family: inherit;
-  font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
@@ -110,6 +116,8 @@ a{text-decoration:none;} ul{list-style:none;}
 }
 .list-section-team-item-description {
   line-height: 1.19;
+  /* ????? Нужно ли здесь указывать font-weight? И как понять какой он чейчас, если в стилях он не прописан и не унаследывается, а через девтулзы это свойство не отображается?*/
+  letter-spacing: 0.03em;
 }
 /* portfolio.html */
 /* examples */
@@ -157,4 +165,10 @@ a{text-decoration:none;} ul{list-style:none;}
 }
 .link-contacts-footer {
   color: var(--color-white-secondary);
+}
+.link-contacts-footer-address:hover,
+.link-contacts-footer-address:focus,
+.link-contacts-footer:hover,
+.link-contacts-footer:focus {
+  color: var(--color-accent-primary);
 }
